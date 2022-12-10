@@ -12,37 +12,36 @@
     <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
 </head>
 <body>
-    <header>  
-        <div class="container header-section">     
-        <nav class="nav main-nav">        
+    <header>
+        <nav class="main-nav container">        
             <a class="logo" href="./index.html"><span class="logo-half">Web</span>studio</a>
             <ul class="list site-nav">
                 <li class="list-link-item"><a class="list-link" href="./index.html">Studio</a></li>
                 <li class="list-link-item"><a class="list-link" href="./portfolio.html">Portfolio</a></li>
                 <li class="list-link-item"><a class="list-link" href="#">Contact</a></li>
-            </ul>
-        
+            </ul>        
         <ul class="contacts list">
             <li class="list-link-item"><a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li class="list-link-item"><a class="contact-link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
         </ul>
         </nav>
-        </div>
     </header>
     <main class="main">
-        <section class="container filter-cont">        
-            <h1 class="visually-hidden">Service examples</h1>
-            <ul class="list filter-list">
-            <div class="filter">
-                <li class="filter-item"><button class="all-btn" type="button">All</button></li>
-                <li class="filter-item"><button class="filter-btn" type="button">Web Site</button></li>
-                <li class="filter-item"><button class="filter-btn" type="button">App</button></li>
-                <li class="filter-item"><button class="filter-btn" type="button">Design</button></li>
-                <li class="filter-item"><button class="filter-btn" type="button">Marketing</button></li>
-            </div>
-            </ul>    
-        </section>
-        <section class="container srv-cards">
+        <section>
+            <div class="portfolio-main container">
+            <div class="filter-cont">       
+                <h1 class="visually-hidden">Service examples</h1>
+                <ul class="list filter-list">
+                <div class="filter">
+                    <li class="filter-item"><button class="all-btn" type="button">All</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Web Site</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">App</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Design</button></li>
+                    <li class="filter-item"><button class="filter-btn" type="button">Marketing</button></li>
+                </div>
+                </ul>
+            </div>        
+        <div class="srv-cards">
         <ul class="list crd-list">            
             <li class="staff-card card-item">
                 <img src="./images/srvc1.jpg" alt="Banking app" width="360" height="300">
@@ -89,6 +88,8 @@
                 <p class="list-text">Web Site</p>
             </li>
         </ul>
+        </div>
+        </div>
         </section>
     </main>
     <footer class="container footer-content">
