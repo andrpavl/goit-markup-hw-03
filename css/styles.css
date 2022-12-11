@@ -417,6 +417,7 @@ footer {
 .crd-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin-right: -24px;
     margin-bottom: -48px;
     
