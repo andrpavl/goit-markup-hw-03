@@ -15,8 +15,10 @@ body {
     color: var(--dark-main);
 }
 
-
-
+img {
+    display: block;
+    width: 100%;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -38,6 +40,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 ul {
     margin: 0;
@@ -85,12 +88,14 @@ ul {
     padding-bottom: 24px;
 }
 
-.list-link:hover {
+.list-link:hover, 
+.list-link:focus {
     color: var(--blue-theme)
 }
 .list-link:active {
-    color: var(--blue-theme)
+    color: var(--dark-main)
 }
+
 .contact-link {
     font-weight: 400;
     font-size: 16px;
@@ -104,9 +109,7 @@ ul {
     display: flex;
     margin-left: auto;
 }
-.contact-link:last-child {
-    margin-right: 15px;
-}
+
 .contacts .list-link-item + .list-link-item{
     margin-left: 40px;
 }
@@ -166,6 +169,7 @@ ul {
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     }
 .hero-button:hover {
     background: #4D5AE5;
@@ -181,7 +185,7 @@ ul {
 /* skills style */
 
 .skills {
-    padding: 120px 15px;
+    padding: 120px 0;
 }
 
 .skills-list {
@@ -275,6 +279,7 @@ ul {
     background-color: var(--staff-bgc);
     padding-top: 120px;
     padding-bottom: 120px;
+    
 }
 
 .staff-name {
@@ -284,8 +289,7 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--dark-theme);
-    margin-top: 32px;
-    margin-bottom: 8px;
+    margin: 0 0 8px;
 }
 
 .staff-position {
@@ -295,12 +299,12 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--dark-main);
-    margin-bottom: 32px;
-    margin-top: 0;
+    margin: 0;
 }
 .staff-card {
     background-color: var(--standart-light);
     margin-right: 24px;
+    width: calc((100% - 72px) / 4);
 }
 .staff-card:last-child {
     margin-right: 0px;
@@ -393,25 +397,37 @@ footer {
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     background-color: var(--standart-light);
     margin-right: 24px;
-   
-    
-
+    box-sizing: border-box;
 }
-.card-item:nth-child(3n) {
-    margin-right: 0px
-}
-
+/* .card-item:nth-child(3n + 3) {
+    margin-right: 0;
+} */
 
 .filter-item:not(:last-child) {
     margin-right: 24px;
 }
 .list-name {
-    margin: 32px 0px 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark-theme);
+
+    margin: 0 0 8px;
     padding-left: 16px;
 }
 .list-text {
-    margin: 0px 0px 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark-main);
+    margin: 0;
     padding-left: 16px;
+}
+.card-content {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .crd-list {
@@ -420,7 +436,7 @@ footer {
     align-items: center;
     margin-right: -24px;
     margin-bottom: -48px;
-    
+    box-sizing: border-box;    
 }
 .filter-btn {
     padding: 12px 24px;
