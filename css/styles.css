@@ -397,11 +397,11 @@ footer {
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     background-color: var(--standart-light);
     margin-right: 24px;
-    box-sizing: border-box;
+    
 }
-/* .card-item:nth-child(3n + 3) {
+.card-item:nth-child(3n + 3) {
     margin-right: 0;
-} */
+}
 
 .filter-item:not(:last-child) {
     margin-right: 24px;
@@ -436,7 +436,6 @@ footer {
     align-items: center;
     margin-right: -24px;
     margin-bottom: -48px;
-    box-sizing: border-box;    
 }
 .filter-btn {
     padding: 12px 24px;
